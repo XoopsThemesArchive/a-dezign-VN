@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="Adezign <www.adezign.nl>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="tdupleft"><img src="<{$xoops_imageurl}>images/ul_top.gif" alt="Theme © Adezign 2005" width="459" height="15"></td>
+    <td align="center" valign="top" class="tdupcenter"><img src="<{$xoops_imageurl}>images/bg_up.gif" width="1" height="15"></td>
+    <td align="right" class="tdupright"><img src="<{$xoops_imageurl}>images/ur_top.gif" width="315" height="15"></td>
+  </tr>
+  <tr>
+    <td><img src="<{$xoops_imageurl}>/images/ul_mid.gif" alt="Theme © Adezign 2005" width="459" height="39"></td>
+    <td align="center" class="tdlogoup"><img src="<{$xoops_imageurl}>/images/bg_uc_mid.gif" width="0" height="0"></td>
+    <td align="right"><img src="<{$xoops_imageurl}>/images/ur_mid.gif" width="315" height="39" usemap="#Map"></td>
+  </tr>
+  <tr>
+    <td><img src="<{$xoops_imageurl}>/images/ul_mid1.gif" alt="Theme © Adezign 2005" width="459" height="18"></td>
+    <td align="center" class="tdlogodown"><img src="<{$xoops_imageurl}>/images/bg_uc_mid1.gif" width="0" height="0"></td>
+    <td><img src="<{$xoops_imageurl}>/images/ur_mid1.gif" width="315" height="18"></td>
+  </tr>
+  <tr>
+    <td><img src="<{$xoops_imageurl}>/images/ul_mid2.gif" alt="Theme © Adezign 2005" width="459" height="17"></td>
+    <td align="center" class="tdlogobot"><img src="<{$xoops_imageurl}>/images/bg_uc_mid2.gif" width="0" height="0"></td>
+    <td><img src="<{$xoops_imageurl}>/images/ur_mid2.gif" width="315" height="17"></td>
+  </tr>
+</table>
+<table width="95%"  border="0" align="center" cellpadding="6" cellspacing="0">
+  <tr>
+    <td align="center" class="left">
+      <!-- Start left blocks loop -->
+      <{foreach item=block from=$xoops_lblocks}> <{include file="a-dezign-VN/theme_blockleft.html"}> <{/foreach}>
+      <!-- End left blocks loop -->
+    </td>
+    <td id="centerLcolumn" valign="top">
+    	<!-- Display center blocks if any -->
+      <{if $xoops_showcblock == 1}>
+      <!-- Start center-left blocks loop -->
+      <table cellspacing="6">
+        <tr>
+          <td id="centerCcolumn" colspan="2" valign="top">
+            <!-- Start center-center blocks loop -->
+            <{foreach item=block from=$xoops_ccblocks}> <{include file="a-dezign-VN/theme_blockcenter_c.html"}> <{/foreach}>
+            <!-- End center-center blocks loop -->
+          </td>
+        </tr>
+        <tr>
+          <td id="centerLcolumn" valign="top">
+            <!-- Start center-left blocks loop -->
+            <{foreach item=block from=$xoops_clblocks}> <{include file="a-dezign-VN/theme_blockcenter_l.html"}> <{/foreach}>
+            <!-- End center-left blocks loop -->
+          </td>
+          <td id="centerRcolumn" valign="top">
+            <!-- Start center-right blocks loop -->
+            <{foreach item=block from=$xoops_crblocks}> <{include file="a-dezign-VN/theme_blockcenter_r.html"}> <{/foreach}>
+            <!-- End center-right blocks loop -->
+          </td>
+        </tr>
+      </table>
+      <{/if}>
+        <!-- End display center blocks -->
+        <div id="content">
+        <{$xoops_contents}>
+        </div>
+      </td>
+      <{if $xoops_showrblock == 1}>
+      <td class="left">
+        <!-- Start right blocks loop -->
+        <{foreach item=block from=$xoops_rblocks}>
+          <{include file="a-dezign-VN/theme_blockright.html"}>
+        <{/foreach}>
+        <!-- End right blocks loop -->
+      </td>
+    <{/if}>
+  </tr>
+</table>
+<table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="<{$xoops_imageurl}>images/bottom_1.gif" width="151" height="7" /></td>
+    <td class="btmcentertop"></td>
+    <td><img src="<{$xoops_imageurl}>images/bottom_7.gif" width="150" height="7" /></td>
+  </tr>
+  <tr>
+    <td><img src="<{$xoops_imageurl}>images/bottom_2.gif" width="151" height="13" /></td>
+    <td class="copy">COPYRIGHT &copy; 1996 - 2005  ADEZIGN.NL </td>
+    <td><img src="<{$xoops_imageurl}>images/bottom_8.gif" width="150" height="13" /></td>
+  </tr>
+  <tr>
+    <td width="157" class="bottomleft"><img src="<{$xoops_imageurl}>images/bottom_3.gif" width="151" height="7" /></td>
+    <td class="btmcenter"></td>
+    <td width="147" class="bottomright"><img src="<{$xoops_imageurl}>images/bottom_9.gif" width="150" height="7" /></td>
+  </tr>
+</table>
+<map name="Map" id="Map">
+  <area shape="circle" alt="Bekijk het nieuws" coords="142,10,10" href="<{$xoops_url}>/modules/news/" /> <!-- this is the info button. use <{$xoops_url}>/modules/etcetc as link option -->
+  <area shape="circle" alt="Naar de index" coords="167,10,10" href="<{$xoops_url}>/" /> <!-- this is the home button. use <{$xoops_url}>/modules/etcetc as link option -->
+  <area shape="circle" alt="Neem contact met ons op" coords="190,10,10" href="<{$xoops_url}>/modules/contact/" /> <!-- this is the mail button. use <{$xoops_url}>/modules/etcetc as link option -->
+  <area shape="circle" alt="Nieuws inzenden" coords="215,10,10" href="<{$xoops_url}>/modules/news/submit.php" /> <!-- this is the pencil button. use <{$xoops_url}>/modules/etcetc as link option -->
+  <area shape="circle" alt="Uitgebreid zoeken" coords="241,11,11" href="<{$xoops_url}>/search.php" /> <!-- this is the arrow button. use <{$xoops_url}>/modules/etcetc as link option -->
+</body>
+</html>
